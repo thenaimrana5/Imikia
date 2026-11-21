@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMIKIA | Your Trusted Ride-On Vehicle Sourcing Partner in China</title>
+  <meta name="description" content="IMIKIA is a professional B2B ride-on vehicle sourcing and supply partner in Pinghu, Zhejiang, China. 18+ years experience in electric ride-on cars, motorcycles, ATVs/UTVs, and pedal go-karts." />
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> 
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            obsidian: {
+              950: '#07090e',
+              900: '#0b0f17',
+              850: '#101622',
+              800: '#161f30',
+              700: '#212e47',
+            },
+            brand: {
+              gold: '#f59e0b',
+              amber: '#d97706',
+              blue: '#3b82f6',
+              cyan: '#06b6d4',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Dark Industrial Styling & Cross-Browser Grid Consistency */
+    body {
+      background-color: #07090e;
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    /* Subtle Hero & Section Gradients */
+    .hero-bg {
+      background: 
+        radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 15% 80%, rgba(59, 130, 246, 0.10) 0%, transparent 50%),
+        linear-gradient(180deg, #0b0f17 0%, #07090e 100%);
+    }
+
+    .grid-pattern {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .glass-card {
+      background: rgba(16, 22, 34, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(245, 158, 11, 0.45);
+      box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.65);
+    }
+
+    /* Consistent 16:10 Image Container across Chrome, Firefox & Safari */
+    .aspect-16-10 {
+      position: relative;
+      width: 100%;
+      padding-bottom: 62.5%; /* 10 / 16 = 0.625 */
+      overflow: hidden;
+      background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+    }
+
+    .aspect-16-10 > img,
+    .aspect-16-10 > .svg-stage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Dropdown hover handling on desktop */
+    @media (min-width: 1024px) {
+      .group:hover .group-hover-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07090e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #212e47;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f59e0b;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- ==================== 1. TOP UTILITY BAR ==================== -->
+  <div class="bg-obsidian-950 border-b border-white/10 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-4 sm:space-x-6">
+        <a href="tel:+8613732591823" class="hover:text-amber-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-amber-500"></i>
+          <span>+86 13732591823</span>
+        </a>
+        <a href="mailto:sales@imikia.com" class="hover:text-amber-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-envelope text-amber-500"></i>
+          <span>sales@imikia.com</span>
+        </a>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-500">
+          <i class="fa-solid fa-location-dot text-amber-500/80"></i>
+          Pinghu, Zhejiang, China (Ningbo / Shanghai Port)
+        </span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="hidden sm:inline text-slate-500">B2B OEM & Wholesale Export</span>
+        <div class="flex items-center space-x-3 text-slate-400">
+          <a href="#contact" aria-label="WhatsApp" class="hover:text-emerald-400 transition"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+          <a href="#contact" aria-label="LinkedIn" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+          <a href="#contact" aria-label="YouTube" class="hover:text-red-400 transition"><i class="fa-brands fa-youtube text-sm"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY HEADER NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-obsidian-900/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-amber-500/20">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <div>
+            <span class="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-white">IMIKIA</span>
+            <span class="block text-[10px] uppercase tracking-[0.2em] text-amber-400 font-semibold -mt-1">Ride-On Sourcing</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+          <a href="#" class="text-white hover:text-amber-400 transition">Home</a>
+          
+          <!-- Multi-level Product Dropdown -->
+          <div class="relative group py-6">
+            <button type="button" class="flex items-center gap-1.5 text-slate-200 hover:text-amber-400 transition">
+              <span>Products</span>
+              <i class="fa-solid fa-chevron-down text-[10px] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="group-hover-menu opacity-0 invisible translate-y-2 transition-all duration-200 absolute left-0 top-full w-72 rounded-2xl bg-obsidian-850 border border-white/10 shadow-2xl p-3 space-y-1">
+              <a href="#products" onclick="filterProducts('cars')" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition">
+                <div class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-car"></i>
+                </div>
+                <div>
+                  <div class="text-white font-semibold text-sm">Electric Ride-On Cars</div>
+                  <div class="text-xs text-slate-400">12V, 24V, Licensed & 2-Seater</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('motorcycles')" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition">
+                <div class="w-8 h-8 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-motorcycle"></i>
+                </div>
+                <div>
+                  <div class="text-white font-semibold text-sm">Ride-On Motorcycles</div>
+                  <div class="text-xs text-slate-400">Vespa Scooters & Sport Bikes</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('atv')" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-truck-monster"></i>
+                </div>
+                <div>
+                  <div class="text-white font-semibold text-sm">Ride-On ATVs & UTVs</div>
+                  <div class="text-xs text-slate-400">4WD Off-Road Buggies & Quads</div>
+                </div>
+              </a>
+              <a href="#products" onclick="filterProducts('gokart')" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/5 transition">
+                <div class="w-8 h-8 rounded-lg bg-purple-500/15 text-purple-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-flag-checkered"></i>
+                </div>
+                <div>
+                  <div class="text-white font-semibold text-sm">Pedal Go-Karts</div>
+                  <div class="text-xs text-slate-400">Steel Frame & Licensed Racers</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#advantages" class="text-slate-200 hover:text-amber-400 transition">Sourcing & QC</a>
+          <a href="#container-estimator" class="text-slate-200 hover:text-amber-400 transition">40HQ Estimator</a>
+          <a href="#insights" class="text-slate-200 hover:text-amber-400 transition">Knowledge / Insights</a>
+          <a href="#about" class="text-slate-200 hover:text-amber-400 transition">About Us</a>
+        </nav>
+
+        <!-- Header Right Actions -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Search Modal Trigger -->
+          <button onclick="openSearchModal()" aria-label="Search Products" class="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 hover:text-white border border-white/10 transition">
+            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+          </button>
+
+          <!-- Request Quote CTA -->
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-amber-500/20">
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button onclick="toggleMobileMenu()" aria-label="Open Navigation Menu" class="lg:hidden p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 transition">
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-base"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-obsidian-900 border-t border-white/10 px-4 pt-4 pb-6 space-y-3">
+      <a href="#" onclick="toggleMobileMenu()" class="block py-2 text-white font-medium">Home</a>
+      <div class="border-y border-white/10 py-2 space-y-2">
+        <div class="text-xs font-semibold uppercase tracking-wider text-amber-400">Product Categories</div>
+        <a href="#products" onclick="filterProducts('cars'); toggleMobileMenu()" class="block pl-3 py-1.5 text-sm text-slate-300 hover:text-white">• Electric Ride-On Cars</a>
+        <a href="#products" onclick="filterProducts('motorcycles'); toggleMobileMenu()" class="block pl-3 py-1.5 text-sm text-slate-300 hover:text-white">• Ride-On Motorcycles</a>
+        <a href="#products" onclick="filterProducts('atv'); toggleMobileMenu()" class="block pl-3 py-1.5 text-sm text-slate-300 hover:text-white">• Ride-On ATVs & UTVs</a>
+        <a href="#products" onclick="filterProducts('gokart'); toggleMobileMenu()" class="block pl-3 py-1.5 text-sm text-slate-300 hover:text-white">• Pedal Go-Karts</a>
+      </div>
+      <a href="#advantages" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium">Sourcing & QC</a>
+      <a href="#container-estimator" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium">40HQ Container Estimator</a>
+      <a href="#insights" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium">Knowledge / Insights</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 font-medium">About Us</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block w-full text-center py-3 rounded-xl bg-amber-500 text-slate-950 font-bold text-sm mt-2">
+        Request a Quote
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HERO BANNER SECTION ==================== -->
+  <section class="relative hero-bg grid-pattern border-b border-white/10 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs sm:text-sm font-semibold">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>18+ Years of Industry Experience • Pinghu Manufacturing Hub</span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[54px] text-white leading-[1.12] tracking-tight">
+            Your Trusted <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Ride-On Vehicle</span> Sourcing Partner in China
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+            End-to-end B2B sourcing, factory audit, OEM customization, and pre-shipment quality control for licensed electric cars, off-road UTVs, motorcycles, and pedal go-karts—certified to <strong class="text-white">ASTM F963, CE, EN71 & EN62115</strong> and shipped globally via Ningbo & Shanghai ports.
+          </p>
+
+          <!-- Hero CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#products" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm sm:text-base transition shadow-lg shadow-amber-500/25 flex items-center gap-2">
+              <span>Explore Products</span>
+              <i class="fa-solid fa-grid-2"></i>
+            </a>
+            <a href="#contact" class="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/15 font-semibold text-sm sm:text-base transition flex items-center gap-2">
+              <i class="fa-solid fa-file-invoice-dollar text-amber-400"></i>
+              <span>Request a Quote</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
+            <div>
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-white">18+ Years</div>
+              <div class="text-xs text-slate-400 mt-0.5">Industry Experience</div>
+            </div>
+            <div>
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-amber-400">25–35 Days</div>
+              <div class="text-xs text-slate-400 mt-0.5">Production Lead Time</div>
+            </div>
+            <div>
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-white">Ningbo / SH</div>
+              <div class="text-xs text-slate-400 mt-0.5">Direct Export Ports</div>
+            </div>
+            <div>
+              <div class="font-display font-extrabold text-xl sm:text-2xl text-emerald-400">40HQ / LCL</div>
+              <div class="text-xs text-slate-400 mt-0.5">Flexible Container Load</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-3xl p-5 sm:p-6 relative">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">Featured Export Flagship</span>
+              <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-400 text-xs font-medium border border-emerald-500/25">CE / ASTM Certified</span>
+            </div>
+            
+            <!-- Custom Automotive Vector Render -->
+            <div class="rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-white/10 p-6 flex flex-col items-center justify-center relative overflow-hidden">
+              <div class="absolute -right-8 -top-8 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl"></div>
+              <svg viewBox="0 0 420 200" class="w-full h-44 drop-shadow-2xl" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ground Shadow -->
+                <ellipse cx="210" cy="172" rx="165" ry="12" fill="rgba(0,0,0,0.65)"/>
+                <!-- Sport Car Body Silhouette -->
+                <path d="M55 135 L72 102 C82 88 105 82 135 80 L185 58 C215 48 255 50 288 68 L335 92 C358 98 372 112 374 132 L365 144 L55 144 Z" fill="url(#carGrad)" stroke="#f59e0b" stroke-width="2"/>
+                <!-- Cabin / Windshield -->
+                <path d="M142 82 L188 63 C214 55 248 57 274 71 L305 88 L142 88 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+                <!-- Headlight LED -->
+                <path d="M352 108 L370 114 L356 122 Z" fill="#fef08a"/>
+                <!-- Racing Stripe -->
+                <path d="M85 120 L345 116" stroke="rgba(255,255,255,0.25)" stroke-width="3" stroke-dasharray="12 6"/>
+                <!-- Rear Wheel -->
+                <circle cx="118" cy="144" r="28" fill="#090d16" stroke="#475569" stroke-width="4"/>
+                <circle cx="118" cy="144" r="15" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+                <circle cx="118" cy="144" r="5" fill="#f59e0b"/>
+                <!-- Front Wheel -->
+                <circle cx="308" cy="144" r="28" fill="#090d16" stroke="#475569" stroke-width="4"/>
+                <circle cx="308" cy="144" r="15" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+                <circle cx="308" cy="144" r="5" fill="#f59e0b"/>
+                <defs>
+                  <linearGradient id="carGrad" x1="55" y1="55" x2="374" y2="145" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1e293b"/>
+                    <stop offset="0.5" stop-color="#334155"/>
+                    <stop offset="1" stop-color="#0f172a"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="w-full flex items-center justify-between text-xs text-slate-400 mt-2 pt-3 border-t border-white/10">
+                <span>12V / 24V Dual-Motor</span>
+                <span>2.4G Parental Remote</span>
+                <span>EVA Soft Tires</span>
+              </div>
+            </div>
+
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <div>
+                <h3 class="text-white font-bold text-base">2027 B2B Wholesale Catalog</h3>
+                <p class="text-xs text-slate-400">MOQ from 50 PCS • Mixed 40HQ Supported</p>
+              </div>
+              <button onclick="openQuoteWithModel('2027 Full B2B Wholesale Catalog')" class="px-4 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500 text-amber-400 hover:text-slate-950 font-semibold text-xs border border-amber-500/30 transition">
+                Get FOB Price List
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. PRODUCT RANGE & INTERACTIVE FILTER ==================== -->
+  <section id="products" class="py-16 sm:py-24 bg-obsidian-950 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">OEM & Licensed Fleet</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-2">Our Ride-On Vehicle Range</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+            Curated export-ready models manufactured in Pinghu & Jiaxing factories with full compliance documentation and custom branding options.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div id="category-tabs" class="flex flex-wrap gap-2">
+          <button onclick="filterProducts('all')" data-cat="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-500 text-slate-950 transition">
+            All Models
+          </button>
+          <button onclick="filterProducts('cars')" data-cat="cars" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 text-slate-300 hover:bg-white/10 border border-white/10 transition">
+            Electric Cars
+          </button>
+          <button onclick="filterProducts('motorcycles')" data-cat="motorcycles" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 text-slate-300 hover:bg-white/10 border border-white/10 transition">
+            Motorcycles
+          </button>
+          <button onclick="filterProducts('atv')" data-cat="atv" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 text-slate-300 hover:bg-white/10 border border-white/10 transition">
+            ATVs & UTVs
+          </button>
+          <button onclick="filterProducts('gokart')" data-cat="gokart" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 text-slate-300 hover:bg-white/10 border border-white/10 transition">
+            Pedal Go-Karts
+          </button>
+        </div>
+      </div>
+
+      <!-- Responsive Equal-Height Product Grid -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Populated dynamically via JavaScript for clean consistency -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. COMPREHENSIVE SOURCING & SUPPLY SUPPORT ==================== -->
+  <section id="advantages" class="py-16 sm:py-24 bg-obsidian-900 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Why Importers Choose IMIKIA</span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-2">Comprehensive Sourcing & Supply Support</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          We eliminate factory communication gaps, quality surprises, and certification bottlenecks so you can scale your ride-on vehicle brand reliably.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Advantage 1 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Product Sourcing & Development</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Direct access to verified tier-1 ride-on vehicle factories in Pinghu & Zhejiang, matching your target price point, battery specs, and market positioning.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-amber-400 font-medium">Factory-Direct FOB Pricing</div>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Supplier Coordination & Production Follow-up</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              On-site production milestone tracking from injection molding and motor assembly to carton packaging, ensuring 25–35 day on-time delivery.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-blue-400 font-medium">Weekly Production Photo/Video Logs</div>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Independent QC & Pre-Shipment Inspection</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Strict AQL pre-shipment testing covering remote pairing, gearbox torque, paint finish, drop tests, and container loading supervision.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-emerald-400 font-medium">100% Functional Sampling Check</div>
+        </div>
+
+        <!-- Advantage 4 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">OEM & Custom Branding Support</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Custom body color spraying, private-label badge decals, multi-language user manuals, retail color boxes, and leather seat embroidery.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-purple-400 font-medium">Private Label Packaging Ready</div>
+        </div>
+
+        <!-- Advantage 5 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/15 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Compliance & Certification</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Full regulatory documentation for EU, UK, US, and GCC markets including CE, EN71, EN62115, ASTM F963, CPC, and battery UN38.3 / MSDS.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-cyan-400 font-medium">Customs-Cleared Test Reports</div>
+        </div>
+
+        <!-- Advantage 6 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-rose-500/15 border border-rose-500/30 text-rose-400 flex items-center justify-center text-xl mb-5">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Spare Parts & After-Sales Support</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Dedicated 1%–2% FOC vulnerable spare parts (control boards, 2.4G remotes, chargers, gearboxes, switches) consolidated right inside your container.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-white/5 text-xs text-rose-400 font-medium">Long-Term Component Supply</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. CORPORATE PROFILE & COMPLIANCE HIGHLIGHTS ==================== -->
+  <section id="about" class="py-16 sm:py-24 bg-obsidian-950 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Corporate Story -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Corporate Profile</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white leading-tight">
+            18+ Years Rooted in China’s Ride-On Vehicle Capital
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Headquartered in <strong class="text-white">Pinghu City, Zhejiang Province</strong>—China’s largest manufacturing cluster for children's electric ride-on vehicles—IMIKIA bridges international distributors, retail chains, and e-commerce brands directly with vetted production lines.
+          </p>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            Located within 1.5 hours of both <strong class="text-white">Shanghai Port</strong> and <strong class="text-white">Ningbo-Zhoushan Port</strong>, we optimize inland drayage, mixed-SKU 40HQ container loading, and strict pre-shipment safety audits for clients across Europe, North America, the Middle East, and Latin America.
+          </p>
+
+          <div class="grid grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-obsidian-900 border border-white/10">
+              <div class="text-amber-400 font-display font-extrabold text-xl sm:text-2xl">45+</div>
+              <div class="text-xs text-slate-400 mt-1">Export Markets</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-obsidian-900 border border-white/10">
+              <div class="text-white font-display font-extrabold text-xl sm:text-2xl">120+</div>
+              <div class="text-xs text-slate-400 mt-1">Active Models</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-obsidian-900 border border-white/10">
+              <div class="text-emerald-400 font-display font-extrabold text-xl sm:text-2xl">99.2%</div>
+              <div class="text-xs text-slate-400 mt-1">QC Pass Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3 Verified Compliance Pillars -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="glass-card rounded-2xl p-6 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="font-display font-bold text-lg text-white">Safety Tested: ASTM F963 & CE</h3>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[11px] font-semibold">Verified</span>
+              </div>
+              <p class="text-slate-400 text-sm mt-1.5 leading-relaxed">
+                Compliant with EN71-1/2/3 mechanical & chemical toy safety, EN62115 electric toy standards, and US CPSIA / ASTM F963 regulations including phthalate-free PP plastics.
+              </p>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="font-display font-bold text-lg text-white">Strict QA Lab: Tolerances & Drop Tests</h3>
+                <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[11px] font-semibold">ISO Protocol</span>
+              </div>
+              <p class="text-slate-400 text-sm mt-1.5 leading-relaxed">
+                Every batch undergoes axle load-bearing stress checks, steering torque calibration, brake distance verification, and ISTA carton drop testing to survive long-haul ocean transit.
+              </p>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-2xl p-6 flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-400 flex items-center justify-center text-xl shrink-0">
+              <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="font-display font-bold text-lg text-white">Certified BMS: Thermal & Overcharge Safe</h3>
+                <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[11px] font-semibold">UN38.3 / MSDS</span>
+              </div>
+              <p class="text-slate-400 text-sm mt-1.5 leading-relaxed">
+                12V & 24V sealed lead-acid and lithium battery packs equipped with resettable thermal fuses, short-circuit protection, and certified smart chargers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. INTERACTIVE 40HQ CONTAINER LOAD ESTIMATOR ==================== -->
+  <section id="container-estimator" class="py-16 sm:py-24 bg-obsidian-900 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-amber-500/20">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left Info -->
+          <div class="lg:col-span-5 space-y-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 text-amber-400 text-xs font-semibold">
+              <i class="fa-solid fa-ship"></i> Logistics & Freight Planner
+            </span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white">
+              Interactive Container Load (FCL) Estimator
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Maximize your landed margin by planning exact carton CBM and unit quantities for <strong class="text-white">Ningbo or Shanghai</strong> departure. Mixed models in a single 40HQ container are supported.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-slate-300 pt-2">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Standard Production Lead Time: <strong>25–35 Days</strong></li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Terms Supported: <strong>FOB Ningbo/Shanghai, CIF, DDP</strong></li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> LCL Trial Orders: <strong>From 50–100 PCS</strong></li>
+            </ul>
+          </div>
+
+          <!-- Right Calculator Widget -->
+          <div class="lg:col-span-7 bg-obsidian-950/90 rounded-2xl p-6 border border-white/10 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="calc-vehicle" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                  1. Select Vehicle Category
+                </label>
+                <select id="calc-vehicle" onchange="calculateContainerLoad()" class="w-full px-4 py-3 rounded-xl bg-obsidian-850 border border-white/15 text-white text-sm focus:outline-none focus:border-amber-500">
+                  <option value="car12v">12V Licensed Ride-On Car (~0.24 CBM/ctn)</option>
+                  <option value="utv24v">24V Two-Seater Off-Road UTV (~0.42 CBM/ctn)</option>
+                  <option value="moto">12V Ride-On Motorcycle / Vespa (~0.18 CBM/ctn)</option>
+                  <option value="gokart">Steel Frame Pedal Go-Kart (~0.21 CBM/ctn)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="calc-container" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
+                  2. Select Container Size
+                </label>
+                <select id="calc-container" onchange="calculateContainerLoad()" class="w-full px-4 py-3 rounded-xl bg-obsidian-850 border border-white/15 text-white text-sm focus:outline-none focus:border-amber-500">
+                  <option value="40HQ" selected>40' High Cube (40HQ • ~68 CBM)</option>
+                  <option value="40GP">40' Standard (40GP • ~58 CBM)</option>
+                  <option value="20GP">20' Standard (20GP • ~28 CBM)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Output Metrics -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-4 p-4 rounded-2xl bg-gradient-to-r from-amber-500/10 via-obsidian-850 to-blue-500/10 border border-white/10">
+              <div class="text-center sm:text-left">
+                <div class="text-[11px] uppercase tracking-wider text-slate-400">Est. Capacity</div>
+                <div id="calc-units" class="font-display font-extrabold text-2xl sm:text-3xl text-amber-400 mt-1">280 PCS</div>
+              </div>
+              <div class="text-center sm:text-left border-x border-white/10 px-3">
+                <div class="text-[11px] uppercase tracking-wider text-slate-400">Avg. Carton CBM</div>
+                <div id="calc-cbm" class="font-display font-extrabold text-xl sm:text-2xl text-white mt-1">0.24 m³</div>
+              </div>
+              <div class="text-center sm:text-left">
+                <div class="text-[11px] uppercase tracking-wider text-slate-400">FOC Spare Parts</div>
+                <div id="calc-spares" class="font-display font-extrabold text-xl sm:text-2xl text-emerald-400 mt-1">~5 Sets</div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-1">
+              <span class="text-xs text-slate-400">*Actual load varies ±5% based on KD (knock-down) wheel/seat packing.</span>
+              <button onclick="applyContainerToQuote()" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition shrink-0">
+                Quote This Container Load
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. BUYER RESOURCES & KNOWLEDGE INSIGHTS ==================== -->
+  <section id="insights" class="py-16 sm:py-24 bg-obsidian-950 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Buyer Resources</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-2">Sourcing Guides & Knowledge Insights</h2>
+        </div>
+        <p class="text-slate-400 text-sm max-w-md">Practical procurement intelligence for importers, category managers, and distributors.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Article 1 -->
+        <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 pb-0">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-400 font-semibold">Market Strategy</span>
+                <span>6 Min Read</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white leading-snug mb-3">
+                How to Build a Competitive Kids Ride-On Vehicle Range for 2027
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Learn how to balance high-margin licensed flagship models (12V/24V) with entry-level OEM SKUs, dual-seat UTVs, and seasonal colorways.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-5 mt-4 border-t border-white/5">
+            <button onclick="openArticleModal(0)" class="text-amber-400 hover:text-amber-300 font-semibold text-sm inline-flex items-center gap-2 transition">
+              <span>Read Article</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 pb-0">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 font-semibold">Freight Optimization</span>
+                <span>5 Min Read</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white leading-snug mb-3">
+                How to Calculate 40HQ Container Loading for Ride-On Vehicles
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                A step-by-step breakdown of carton CBM optimization, semi-KD vs. full-KD assembly packing, and reducing per-unit ocean freight costs by up to 18%.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-5 mt-4 border-t border-white/5">
+            <button onclick="openArticleModal(1)" class="text-amber-400 hover:text-amber-300 font-semibold text-sm inline-flex items-center gap-2 transition">
+              <span>Read Article</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 pb-0">
+              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 font-semibold">Compliance & Safety</span>
+                <span>7 Min Read</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white leading-snug mb-3">
+                CE, EN71 and EN62115: A Guide for Ride-On Vehicle Buyers
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Essential compliance checklist for European and international customs clearance—covering EMC testing, battery MSDS, and Declaration of Conformity.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-5 mt-4 border-t border-white/5">
+            <button onclick="openArticleModal(2)" class="text-amber-400 hover:text-amber-300 font-semibold text-sm inline-flex items-center gap-2 transition">
+              <span>Read Article</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. GLOBAL SALES CONTACT & B2B QUOTE FORM ==================== -->
+  <section id="contact" class="py-16 sm:py-24 bg-obsidian-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Direct Contact Card -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest">Direct Factory Desk</span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-white mt-2">Start Your Sourcing Inquiry</h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
+              Send us your target models, voltage specs, or container volume. Our export team responds within 12 business hours with FOB pricing and spec sheets.
+            </p>
+          </div>
+
+          <!-- Global Sales Director Profile Card -->
+          <div class="glass-card rounded-2xl p-6 space-y-5 border border-amber-500/25">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 text-slate-950 font-display font-extrabold text-xl flex items-center justify-center shrink-0">
+                FD
+              </div>
+              <div>
+                <div class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Global Sales Director</div>
+                <h3 class="font-display font-bold text-xl text-white">Frank Dai</h3>
+                <div class="text-xs text-slate-400">18+ Years Ride-On Vehicle Export Specialist</div>
+              </div>
+            </div>
+
+            <div class="space-y-3 pt-3 border-t border-white/10 text-sm">
+              <a href="tel:+8613732591823" class="flex items-center gap-3 text-slate-200 hover:text-amber-400 transition">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400">Phone / WhatsApp / WeChat</div>
+                  <div class="font-semibold">+86 13732591823</div>
+                </div>
+              </a>
+
+              <a href="mailto:sales@imikia.com" class="flex items-center gap-3 text-slate-200 hover:text-amber-400 transition">
+                <div class="w-9 h-9 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-envelope text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400">Official Export Email</div>
+                  <div class="font-semibold">sales@imikia.com</div>
+                </div>
+              </a>
+
+              <div class="flex items-start gap-3 text-slate-200">
+                <div class="w-9 h-9 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot text-sm"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400">Office & Sourcing Center</div>
+                  <div class="font-medium text-slate-300">271 Xinhua Middle Road, Pinghu City, Zhejiang, P.R. China</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive B2B Quote Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card rounded-3xl p-6 sm:p-8">
+            <h3 class="font-display font-bold text-xl text-white mb-6">Request FOB Quotation & Catalog</h3>
+            
+            <form id="b2b-quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="q-name" class="block text-xs font-medium text-slate-300 mb-1.5">Full Name *</label>
+                  <input type="text" id="q-name" required placeholder="e.g. Michael Carter" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-amber-500" />
+                </div>
+                <div>
+                  <label for="q-email" class="block text-xs font-medium text-slate-300 mb-1.5">Business Email *</label>
+                  <input type="email" id="q-email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="q-phone" class="block text-xs font-medium text-slate-300 mb-1.5">WhatsApp / Phone *</label>
+                  <input type="tel" id="q-phone" required placeholder="+1 555 234 5678" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-amber-500" />
+                </div>
+                <div>
+                  <label for="q-company" class="block text-xs font-medium text-slate-300 mb-1.5">Company / Brand Name</label>
+                  <input type="text" id="q-company" placeholder="e.g. EuroKids Mobility GmbH" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-amber-500" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="q-model" class="block text-xs font-medium text-slate-300 mb-1.5">Product Model / Category</label>
+                  <select id="q-model" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm focus:outline-none focus:border-amber-500">
+                    <option value="2027 Full B2B Wholesale Catalog">2027 Full B2B Wholesale Catalog</option>
+                    <option value="Licensed Audi RS 6 Avant GT (12V)">Licensed Audi RS 6 Avant GT (12V)</option>
+                    <option value="Mercedes-AMG CLE 53 (12V)">Mercedes-AMG CLE 53 (12V)</option>
+                    <option value="Licensed Land Rover Defender 12V">Licensed Land Rover Defender 12V</option>
+                    <option value="Licensed Vespa 12V Scooter">Licensed Vespa 12V Scooter</option>
+                    <option value="12V/24V 2-Seater Off-Road UTV Buggy">12V/24V 2-Seater Off-Road UTV Buggy</option>
+                    <option value="Kids 6V Electric ATV">Kids 6V Electric ATV</option>
+                    <option value="Licensed Pedal Go-Kart">Licensed Pedal Go-Kart</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="q-qty" class="block text-xs font-medium text-slate-300 mb-1.5">Estimated Order Quantity</label>
+                  <select id="q-qty" class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm focus:outline-none focus:border-amber-500">
+                    <option value="50–100 PCS (LCL Trial)">50–100 PCS (LCL Trial)</option>
+                    <option value="100–250 PCS (20GP / Mixed)">100–250 PCS (20GP / Mixed)</option>
+                    <option value="250–350 PCS (1x 40HQ FCL)" selected>250–350 PCS (1x 40HQ FCL)</option>
+                    <option value="350–1000 PCS (Multi-Container)">350–1000 PCS (Multi-Container)</option>
+                    <option value="1000+ PCS / Annual OEM Program">1000+ PCS / Annual OEM Program</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="q-message" class="block text-xs font-medium text-slate-300 mb-1.5">Destination Port & Custom Requirements</label>
+                <textarea id="q-message" rows="3" placeholder="Tell us your destination port (e.g., Rotterdam, Los Angeles, Jebel Ali), required certifications (CE/EN71/ASTM), or OEM branding needs..." class="w-full px-4 py-3 rounded-xl bg-obsidian-950 border border-white/15 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-amber-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm sm:text-base transition shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Submit B2B Inquiry</span>
+              </button>
+            </form>
+
+            <!-- Instant Confirmation Feedback Box (Hidden by default) -->
+            <div id="quote-confirmation" class="hidden mt-5 p-5 rounded-2xl bg-emerald-500/15 border border-emerald-500/35 text-emerald-200 space-y-2">
+              <div class="flex items-center gap-2 font-bold text-emerald-400 text-base">
+                <i class="fa-solid fa-circle-check text-xl"></i>
+                <span>Inquiry Received — Reference #IMK-2027</span>
+              </div>
+              <p id="confirmation-summary" class="text-xs sm:text-sm text-slate-200 leading-relaxed"></p>
+              <button type="button" onclick="resetQuoteForm()" class="text-xs font-semibold text-amber-400 hover:underline pt-1">
+                Submit another inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. CLEAN FOOTER ==================== -->
+  <footer class="bg-obsidian-950 border-t border-white/10 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+        
+        <div class="space-y-4">
+          <a href="#" class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-lg bg-amber-500 text-slate-950 font-extrabold flex items-center justify-center">
+              <i class="fa-solid fa-car-side text-sm"></i>
+            </div>
+            <span class="font-display font-extrabold text-xl text-white">IMIKIA</span>
+          </a>
+          <p class="text-xs leading-relaxed text-slate-400">
+            Professional Ride-On Vehicle Sourcing & Supply Partner in Pinghu, Zhejiang, China. Supporting global importers with OEM development, factory QC, and 40HQ export logistics.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-3">Product Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#products" onclick="filterProducts('cars')" class="hover:text-amber-400 transition">Electric Ride-On Cars (12V / 24V)</a></li>
+            <li><a href="#products" onclick="filterProducts('motorcycles')" class="hover:text-amber-400 transition">Ride-On Motorcycles & Scooters</a></li>
+            <li><a href="#products" onclick="filterProducts('atv')" class="hover:text-amber-400 transition">Ride-On ATVs & 2-Seater UTVs</a></li>
+            <li><a href="#products" onclick="filterProducts('gokart')" class="hover:text-amber-400 transition">Steel Frame Pedal Go-Karts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-3">Sourcing & Buyer Tools</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#advantages" class="hover:text-amber-400 transition">Pre-Shipment Quality Inspection</a></li>
+            <li><a href="#about" class="hover:text-amber-400 transition">CE, EN71 & ASTM F963 Compliance</a></li>
+            <li><a href="#container-estimator" class="hover:text-amber-400 transition">40HQ Container Load Calculator</a></li>
+            <li><a href="#insights" class="hover:text-amber-400 transition">2027 Buyer Sourcing Guides</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-3">China Export Office</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
+              <span>271 Xinhua Middle Road, Pinghu City, Zhejiang, China</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-amber-400"></i>
+              <span>+86 13732591823 (Frank Dai)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-amber-400"></i>
+              <span>sales@imikia.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>© 2027 IMIKIA. All rights reserved. B2B Ride-On Vehicle Sourcing & Supply Chain.</div>
+        <div>Export Ports: Ningbo-Zhoushan & Shanghai, China</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp / Quick Quote Action Button -->
+  <a href="#contact" aria-label="Quick Contact & WhatsApp" class="fixed bottom-5 right-5 z-40 flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm shadow-2xl shadow-emerald-500/30 transition transform hover:scale-105">
+    <i class="fa-brands fa-whatsapp text-lg"></i>
+    <span class="hidden sm:inline">Chat / Get Quote</span>
+  </a>
+
+  <!-- ==================== MODALS (PRODUCT DETAIL, SEARCH, ARTICLE READER) ==================== -->
+  
+  <!-- 1. Product Detail Modal -->
+  <div id="product-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-obsidian-900 border border-white/15 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10">
+        <span id="pm-badge" class="px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-400 text-xs font-semibold">Licensed Series</span>
+        <button onclick="closeModal('product-modal')" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-6 space-y-5">
+        <div id="pm-visual" class="rounded-2xl overflow-hidden border border-white/10"></div>
+        <div>
+          <h3 id="pm-title" class="font-display font-extrabold text-2xl text-white"></h3>
+          <p id="pm-desc" class="text-slate-300 text-sm mt-2 leading-relaxed"></p>
+        </div>
+        <div id="pm-specs" class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs"></div>
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <button id="pm-inquire-btn" class="flex-1 py-3 px-5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition">
+            Inquire FOB Price & MOQ
+          </button>
+          <button onclick="closeModal('product-modal')" class="py-3 px-5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-sm transition">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Interactive Product Search Modal -->
+  <div id="search-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-start justify-center pt-20 p-4">
+    <div class="bg-obsidian-900 border border-white/15 rounded-3xl max-w-xl w-full overflow-hidden shadow-2xl">
+      <div class="p-4 border-b border-white/10 flex items-center gap-3">
+        <i class="fa-solid fa-magnifying-glass text-amber-400"></i>
+        <input type="text" id="search-input" oninput="handleProductSearch(this.value)" placeholder="Search Audi, Mercedes, 24V UTV, Vespa, Go-Kart..." class="w-full bg-transparent text-white text-sm focus:outline-none" />
+        <button onclick="closeModal('search-modal')" class="text-slate-400 hover:text-white text-xs px-2 py-1 rounded bg-white/5">ESC</button>
+      </div>
+      <div id="search-results" class="max-h-80 overflow-y-auto p-3 space-y-2">
+        <!-- Live search items -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Article Reader Modal -->
+  <div id="article-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-obsidian-900 border border-white/15 rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 shrink-0">
+        <span id="am-tag" class="px-2.5 py-1 rounded-md bg-amber-500/15 text-amber-400 text-xs font-semibold">Buyer Guide</span>
+        <button onclick="closeModal('article-modal')" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 text-slate-300 flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-4">
+        <h3 id="am-title" class="font-display font-extrabold text-xl sm:text-2xl text-white leading-snug"></h3>
+        <div id="am-body" class="text-slate-300 text-sm leading-relaxed space-y-3"></div>
+      </div>
+      <div class="px-6 py-4 border-t border-white/10 bg-obsidian-950 flex items-center justify-between shrink-0">
+        <span class="text-xs text-slate-400">Need custom sourcing advice?</span>
+        <button onclick="closeModal('article-modal'); openQuoteWithModel('Custom Sourcing Consultation');" class="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs">
+          Ask Frank Dai
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // 1. Product Catalog Data
+    const productsData = [
+      {
+        id: 'audi-rs6',
+        name: 'Licensed Audi RS 6 Avant GT',
+        category: 'cars',
+        categoryLabel: 'Electric Cars',
+        voltage: '12V 7Ah',
+        license: 'Official Licensed',
+        cbm: '0.23 CBM',
+        load40hq: '295 PCS',
+        accent: '#f59e0b',
+        icon: 'fa-car-side',
+        desc: 'Official Audi-licensed 12V ride-on wagon featuring dual 35W motors, 2.4G parental remote control, LED matrix-style headlights, soft-start suspension, and MP3/USB dashboard.'
+      },
+      {
+        id: 'mercedes-cle53',
+        name: 'Mercedes-AMG CLE 53',
+        category: 'cars',
+        categoryLabel: 'Electric Cars',
+        voltage: '12V / 24V',
+        license: 'Official Licensed',
+        cbm: '0.24 CBM',
+        load40hq: '280 PCS',
+        accent: '#38bdf8',
+        icon: 'fa-car',
+        desc: 'Sleek AMG coupe replica with opening doors, EVA noise-reduction tires, leatherette seat option, 3-speed remote control, and EN71/ASTM F963 certified electronics.'
+      },
+      {
+        id: 'land-rover-defender',
+        name: 'Licensed Land Rover Defender 12V',
+        category: 'cars',
+        categoryLabel: 'Electric Cars',
+        voltage: '12V 10Ah',
+        license: 'Official Licensed',
+        cbm: '0.28 CBM',
+        load40hq: '240 PCS',
+        accent: '#10b981',
+        icon: 'fa-truck-pickup',
+        desc: 'Rugged licensed SUV with rear spare-wheel storage box, 4-wheel spring suspension, high ground clearance, and full EU/US compliance certification.'
+      },
+      {
+        id: 'vespa-12v',
+        name: 'Licensed Vespa 12V Scooter',
+        category: 'motorcycles',
+        categoryLabel: 'Motorcycles',
+        voltage: '12V 4.5Ah',
+        license: 'Official Licensed',
+        cbm: '0.16 CBM',
+        load40hq: '420 PCS',
+        accent: '#fb7185',
+        icon: 'fa-motorcycle',
+        desc: 'Classic Italian-styled licensed kids scooter with detachable training wheels, faux-leather saddle, working headlight, and compact carton volume for high 40HQ yield.'
+      },
+      {
+        id: 'utv-2seater',
+        name: '12V/24V 2-Seater Off-Road UTV Buggy',
+        category: 'atv',
+        categoryLabel: 'ATVs & UTVs',
+        voltage: '24V 4WD',
+        license: 'OEM / ODM',
+        cbm: '0.42 CBM',
+        load40hq: '160 PCS',
+        accent: '#f97316',
+        icon: 'fa-truck-monster',
+        desc: 'Heavy-duty 2-seater off-road buggy powered by 4x45W motors, oversized deep-tread EVA wheels, tubular roll cage, and dual safety belts.'
+      },
+      {
+        id: 'kids-6v-atv',
+        name: 'Kids 6V Electric ATV',
+        category: 'atv',
+        categoryLabel: 'ATVs & UTVs',
+        voltage: '6V / 12V',
+        license: 'OEM / ODM',
+        cbm: '0.15 CBM',
+        load40hq: '450 PCS',
+        accent: '#a855f7',
+        icon: 'fa-shuttle-space',
+        desc: 'Entry-level high-turnover quad bike for ages 2–5 with simple foot-pedal acceleration, stable wide wheelbase, and custom private-label decal options.'
+      },
+      {
+        id: 'pedal-gokart',
+        name: 'Licensed Pedal Go-Kart',
+        category: 'gokart',
+        categoryLabel: 'Pedal Go-Karts',
+        voltage: 'Manual Pedal',
+        license: 'Licensed / OEM',
+        cbm: '0.21 CBM',
+        load40hq: '320 PCS',
+        accent: '#eab308',
+        icon: 'fa-flag-checkered',
+        desc: 'Powder-coated high-carbon steel frame racer with adjustable bucket seat, handbrake, clutch freewheel lever, and zero battery shipping restrictions.'
+      }
+    ];
+
+    // Helper: Generate Clean Automotive SVG Card Artwork
+    function getVehicleArtworkSVG(item) {
+      return `
+        <div class="svg-stage flex flex-col items-center justify-center p-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 relative">
+          <div class="absolute inset-0 opacity-20" style="background: radial-gradient(circle at 70% 30%, ${item.accent}, transparent 65%);"></div>
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-2 border border-white/10 shadow-lg" style="background: rgba(15,23,42,0.85); color: ${item.accent};">
+            <i class="fa-solid ${item.icon}"></i>
+          </div>
+          <span class="text-[11px] font-mono uppercase tracking-widest text-slate-400">${item.voltage} • ${item.load40hq}/40HQ</span>
+        </div>
+      `;
+    }
+
+    // 2. Render Product Grid with Consistent Card Heights
+    function renderProducts(filter = 'all') {
+      const grid = document.getElementById('product-grid');
+      const filtered = filter === 'all' 
+        ? productsData 
+        : productsData.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map(item => `
+        <div class="glass-card rounded-2xl overflow-hidden flex flex-col h-full">
+          <!-- Consistent 16:10 Image Container -->
+          <div class="aspect-16-10 border-b border-white/10">
+            ${getVehicleArtworkSVG(item)}
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-obsidian-950/85 backdrop-blur text-[11px] font-semibold text-white border border-white/10">
+              ${item.categoryLabel}
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-2.5">
+                <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-400 text-[11px] font-semibold">${item.voltage}</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 text-slate-300 text-[11px] font-medium border border-white/10">${item.license}</span>
+              </div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-white leading-snug mb-2">
+                ${item.name}
+              </h3>
+              <p class="text-slate-400 text-xs leading-relaxed line-clamp-3">
+                ${item.desc}
+              </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-white/10 flex items-center justify-between gap-2">
+              <button onclick="openProductModal('${item.id}')" class="flex-1 py-2.5 px-3 rounded-xl bg-white/5 hover:bg-amber-500 text-white hover:text-slate-950 font-semibold text-xs border border-white/10 hover:border-amber-500 transition text-center">
+                View Details / Inquire
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Filter Tab State Handler
+    function filterProducts(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.dataset.cat === category) {
+          btn.className = 'filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-500 text-slate-950 transition';
+        } else {
+          btn.className = 'filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 text-slate-300 hover:bg-white/10 border border-white/10 transition';
+        }
+      });
+      renderProducts(category);
+    }
+
+    // 3. Product Detail Modal
+    function openProductModal(id) {
+      const item = productsData.find(p => p.id === id);
+      if (!item) return;
+
+      document.getElementById('pm-badge').textContent = `${item.categoryLabel} • ${item.license}`;
+      document.getElementById('pm-title').textContent = item.name;
+      document.getElementById('pm-desc').textContent = item.desc;
+      document.getElementById('pm-visual').innerHTML = `<div class="aspect-16-10">${getVehicleArtworkSVG(item)}</div>`;
+      
+      document.getElementById('pm-specs').innerHTML = `
+        <div class="p-3 rounded-xl bg-obsidian-950 border border-white/10">
+          <div class="text-slate-400 text-[10px] uppercase">Power / Drive</div>
+          <div class="text-white font-bold mt-0.5">${item.voltage}</div>
+        </div>
+        <div class="p-3 rounded-xl bg-obsidian-950 border border-white/10">
+          <div class="text-slate-400 text-[10px] uppercase">Carton Volume</div>
+          <div class="text-white font-bold mt-0.5">${item.cbm}</div>
+        </div>
+        <div class="p-3 rounded-xl bg-obsidian-950 border border-white/10">
+          <div class="text-slate-400 text-[10px] uppercase">40HQ Capacity</div>
+          <div class="text-amber-400 font-bold mt-0.5">${item.load40hq}</div>
+        </div>
+        <div class="p-3 rounded-xl bg-obsidian-950 border border-white/10">
+          <div class="text-slate-400 text-[10px] uppercase">Compliance</div>
+          <div class="text-emerald-400 font-bold mt-0.5">CE / EN71 / ASTM</div>
+        </div>
+      `;
+
+      document.getElementById('pm-inquire-btn').onclick = function() {
+        closeModal('product-modal');
+        openQuoteWithModel(item.name);
+      };
+
+      document.getElementById('product-modal').classList.remove('hidden');
+    }
+
+    // 4. Pre-fill Quote Form & Smooth Scroll
+    function openQuoteWithModel(modelName) {
+      const select = document.getElementById('q-model');
+      let found = false;
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value.toLowerCase().includes(modelName.toLowerCase().slice(0, 14))) {
+          select.selectedIndex = i;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        const opt = document.createElement('option');
+        opt.value = modelName;
+        opt.text = modelName;
+        select.add(opt);
+        select.value = modelName;
+      }
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => document.getElementById('q-name').focus(), 600);
+    }
+
+    // 5. Interactive 40HQ Container Load Calculator
+    const containerSpecs = {
+      car12v: { cbm: 0.24, label: '12V Licensed Ride-On Car' },
+      utv24v: { cbm: 0.42, label: '24V Two-Seater Off-Road UTV' },
+      moto:   { cbm: 0.18, label: '12V Ride-On Motorcycle' },
+      gokart: { cbm: 0.21, label: 'Pedal Go-Kart' }
+    };
+
+    const containerVolume = {
+      '40HQ': 68,
+      '40GP': 58,
+      '20GP': 28
+    };
+
+    function calculateContainerLoad() {
+      const veh = document.getElementById('calc-vehicle').value;
+      const cont = document.getElementById('calc-container').value;
+      const cbm = containerSpecs[veh].cbm;
+      const vol = containerVolume[cont];
+      const units = Math.floor(vol / cbm);
+      const spares = Math.max(2, Math.round(units * 0.018));
+
+      document.getElementById('calc-units').textContent = `${units} PCS`;
+      document.getElementById('calc-cbm').textContent = `${cbm.toFixed(2)} m³`;
+      document.getElementById('calc-spares').textContent = `~${spares} Sets`;
+    }
+
+    function applyContainerToQuote() {
+      const veh = containerSpecs[document.getElementById('calc-vehicle').value].label;
+      const cont = document.getElementById('calc-container').value;
+      const units = document.getElementById('calc-units').textContent;
+      document.getElementById('q-message').value = `Container Estimate Request: ${units} of ${veh} in 1x ${cont} container (FOB Ningbo/Shanghai). Please share unit pricing and packing list.`;
+      openQuoteWithModel(veh);
+    }
+
+    // 6. Search Modal Logic
+    function openSearchModal() {
+      document.getElementById('search-modal').classList.remove('hidden');
+      const input = document.getElementById('search-input');
+      input.value = '';
+      handleProductSearch('');
+      setTimeout(() => input.focus(), 100);
+    }
+
+    function handleProductSearch(query) {
+      const q = query.trim().toLowerCase();
+      const results = productsData.filter(p => 
+        p.name.toLowerCase().includes(q) || 
+        p.categoryLabel.toLowerCase().includes(q) || 
+        p.voltage.toLowerCase().includes(q)
+      );
+      const container = document.getElementById('search-results');
+      if (results.length === 0) {
+        container.innerHTML = `<div class="p-4 text-center text-xs text-slate-400">No matching models found. Try "12V", "Audi", "UTV", or "Vespa".</div>`;
+        return;
+      }
+      container.innerHTML = results.map(item => `
+        <button onclick="closeModal('search-modal'); openProductModal('${item.id}')" class="w-full text-left p-3 rounded-xl hover:bg-white/5 flex items-center justify-between gap-3 transition">
+          <div>
+            <div class="text-white font-semibold text-sm">${item.name}</div>
+            <div class="text-xs text-slate-400">${item.categoryLabel} • ${item.voltage} • ${item.load40hq}/40HQ</div>
+          </div>
+          <span class="text-xs text-amber-400 font-semibold">Inspect →</span>
+        </button>
+      `).join('');
+    }
+
+    // 7. Knowledge Insights Reader Modal
+    const articlesData = [
+      {
+        tag: 'Market Strategy • 2027 Buying Guide',
+        title: 'How to Build a Competitive Kids Ride-On Vehicle Range for 2027',
+        paragraphs: [
+          'Successful importers structure their ride-on vehicle assortment into three clear pricing tiers rather than ordering single models at random.',
+          '1. Hero Licensed Models (35% of volume): Official Audi, Mercedes-AMG, Land Rover, and Vespa licenses drive showroom traffic and online conversion thanks to brand recognition.',
+          '2. High-Power 24V Two-Seater UTVs (30% of volume): Larger off-road buggies command higher retail margins and appeal to parents buying for ages 4–8.',
+          '3. Entry-Level 6V/12V OEM ATVs & Pedal Go-Karts (35% of volume): Compact carton footprints let you load 320–450 units per 40HQ container, lowering landed freight per unit.'
+        ]
+      },
+      {
+        tag: 'Logistics & Freight Optimization',
+        title: 'How to Calculate 40HQ Container Loading for Ride-On Vehicles',
+        paragraphs: [
+          'A standard 40-foot High Cube (40HQ) container provides approximately 68 cubic meters (CBM) of usable internal cargo volume.',
+          'Because ride-on vehicles are volumetric cargo rather than heavy cargo, carton engineering directly determines your landed cost. For example, reducing carton height by just 3 cm through semi-KD wheel packing can add 20–28 extra units to a 40HQ load.',
+          'At IMIKIA, our Pinghu logistics team creates a 3D container stowage plan before shipment—combining large 24V UTV cartons on the base layer with compact 12V motorcycles or pedal go-karts on top.'
+        ]
+      },
+      {
+        tag: 'Compliance & Customs Clearance',
+        title: 'CE, EN71 and EN62115: A Guide for Ride-On Vehicle Buyers',
+        paragraphs: [
+          'Importing electric ride-on toys into the European Union, UK, or North America requires verified third-party lab reports matched to your exact factory SKU and importer label.',
+          '• EN71-1 / EN71-2 / EN71-3: Covers mechanical stability, pinch-point safety, flammability, and heavy-metal migration in plastics.',
+          '• EN62115 & EMC: Specific to electric toys, verifying motor thermal cut-offs, battery circuit protection, and 2.4G remote electromagnetic compatibility.',
+          '• UN38.3 & MSDS: Mandatory transport safety documentation required by ocean carriers for 12V/24V lead-acid and lithium batteries.'
+        ]
+      }
+    ];
+
+    function openArticleModal(index) {
+      const art = articlesData[index];
+      document.getElementById('am-tag').textContent = art.tag;
+      document.getElementById('am-title').textContent = art.title;
+      document.getElementById('am-body').innerHTML = art.paragraphs.map(p => `<p>${p}</p>`).join('');
+      document.getElementById('article-modal').classList.remove('hidden');
+    }
+
+    // 8. Form Validation & Instant Confirmation
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('q-name').value.trim();
+      const email = document.getElementById('q-email').value.trim();
+      const model = document.getElementById('q-model').value;
+      const qty = document.getElementById('q-qty').value;
+
+      const summary = `Thank you, ${name}. Your inquiry for "${model}" (${qty}) has been logged for Global Sales Director Frank Dai. A detailed FOB Ningbo/Shanghai quotation and spec sheet will be sent to ${email} within 12 hours.`;
+      
+      document.getElementById('confirmation-summary').textContent = summary;
+      document.getElementById('b2b-quote-form').classList.add('hidden');
+      document.getElementById('quote-confirmation').classList.remove('hidden');
+    }
+
+    function resetQuoteForm() {
+      document.getElementById('b2b-quote-form').reset();
+      document.getElementById('quote-confirmation').classList.add('hidden');
+      document.getElementById('b2b-quote-form').classList.remove('hidden');
+    }
+
+    // Modal & Mobile Drawer Helpers
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      menu.classList.toggle('hidden');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    }
+
+    // Close modals on Escape key or backdrop click
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal('product-modal');
+        closeModal('search-modal');
+        closeModal('article-modal');
+      }
+    });
+
+    ['product-modal', 'search-modal', 'article-modal'].forEach(modalId => {
+      document.getElementById(modalId).addEventListener('click', function(e) {
+        if (e.target === this) closeModal(modalId);
+      });
+    });
+
+    // Initialize Page
+    window.addEventListener('DOMContentLoaded', () => {
+      renderProducts('all');
+      calculateContainerLoad();
+    });
+  </script>
+</body>
+</html>
